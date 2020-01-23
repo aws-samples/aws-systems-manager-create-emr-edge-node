@@ -74,7 +74,22 @@ resource "aws_iam_role_policy" "ssm_ec2_access" {
     },
     {
       "Action": [
-        "ec2:*"
+        "ec2:AssignPrivateIpAddresses",
+        "ec2:AssociateIamInstanceProfile",
+        "ec2:AttachVolume",
+        "ec2:AttachNetworkInterface",
+        "ec2:CreateImage",
+        "ec2:CreateNetworkInterface",
+        "ec2:CreateSnapshot",
+        "ec2:CreateSnapshots",
+        "ec2:CreateTags",
+        "ec2:CreateVolume",
+        "ec2:Describe*",
+        "ec2:Get*",
+        "ec2:MonitorInstances",
+        "ec2:RebootInstances",
+        "ec2:ReplaceIamInstanceProfileAssociation",
+        "ec2:RunInstances"
       ],
       "Effect": "Allow",
       "Resource": "*"
