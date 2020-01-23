@@ -11,7 +11,6 @@ SPDX-License-Identifier: MIT-0
     user:
       name: ruser
       comment: RStudio user
-      password: "$6$mysecretsalt$Cpw8qeZRWH62AE6HtVBpFK6wi9gtPjoVepbqX6sOAuf4jMtLf5S8Oi6sBtR8AmvT4E9rYwzMOXHtwTrEduZ/g1"
 
   - name: Install RStudio
     yum:
