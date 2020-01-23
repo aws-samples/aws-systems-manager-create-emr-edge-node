@@ -26,7 +26,7 @@ Now that the document is created, you can execute it through the SSM console.  Y
 
 ## Using the edge node
 
-RStudio is installed with a default user name of `ruser` and password `DataScienceTeam`.  You can change the password by logging into the edge node itself and updating the Linux password for `ruser`.
+RStudio is installed with a default user name of `ruser`.  You must set the password by logging into the edge node itself and updating the Linux password for `ruser`.
 
 Access is over port 8787.  You'll need to open an SSH tunnel using Session Manager. 
 
