@@ -1,7 +1,7 @@
-<!-- 
-Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT-0
--->
+# 
+# Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+#
 ---
 description: Set up an EMR edge node with RStudio
 schemaVersion: "0.3"
