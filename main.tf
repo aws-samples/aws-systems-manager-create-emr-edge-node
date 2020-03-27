@@ -141,7 +141,20 @@ resource "aws_iam_role_policy" "ssm_ec2_access" {
     },
     {
       "Action": [
-        "ssm:*"
+        "ssm:AddTagsToResource",
+        "ssm:Describe*",
+        "ssm:Get*",
+        "ssm:List*",
+        "ssm:ModifyDocumentPermission",
+        "ssm:PutParameter",
+        "ssm:SendCommand",
+        "ssm:StartAutomationExecution",
+        "ssm:StartSession",
+        "ssm:StopAutomationExecution",
+        "ssm:TerminateSession",
+        "ssm:UpdateDocument",
+        "ssm:UpdateInstanceAssociationStatus",
+        "ssm:UpdateInstanceInformation"
       ],
       "Effect": "Allow",
       "Resource": "*"
