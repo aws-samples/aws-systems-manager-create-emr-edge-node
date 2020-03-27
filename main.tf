@@ -67,7 +67,17 @@ resource "aws_iam_role_policy" "ssm_ec2_access" {
   "Statement": [
     {
       "Action": [
-        "cloudwatch:*"
+        "cloudwatch:EnableAlarmActions",
+        "cloudwatch:DescribeAlarmHistory",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:DescribeAlarmsForMetric",
+        "cloudwatch:EnableAlarmActions",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics",
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:SetAlarmState"
       ],
       "Effect": "Allow",
       "Resource": "*"
