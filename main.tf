@@ -137,7 +137,7 @@ resource "aws_iam_role_policy" "ssm_ec2_access" {
         "iam:PassRole"
       ],
       "Effect": "Allow",
-      "Resource": "*"
+      "Resource": "${aws_iam_instance_profile.edge_node_profile.arn}"
     },
     {
       "Action": [
